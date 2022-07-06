@@ -4,13 +4,15 @@ from PIL import Image
 
 st.title("Super Basic Photo Editor")
 
+#my streamlit demo app
+
 def display_figures(img1, img2):
     fig1_left, fig2_right = st.columns(2)
     with fig1_left:
-        st.markdown("### Original image")
+        st.markdown("### Original Image")
         st.image(img1)
     with fig2_right:
-        st.markdown("### Processed image")
+        st.markdown("### Processed Image")
         st.image(img2)
 
 image_file = st.sidebar.file_uploader("Upload an image file", type=["jpg","png","tif"])
